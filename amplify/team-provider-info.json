@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vintedscrapper-dev-131603-authRole",
+      "UnauthRoleArn": "arn:aws:iam::492523105510:role/amplify-vintedscrapper-dev-131603-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::492523105510:role/amplify-vintedscrapper-dev-131603-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-vintedscrapper-dev-131603-deployment",
+      "UnauthRoleName": "amplify-vintedscrapper-dev-131603-unauthRole",
+      "StackName": "amplify-vintedscrapper-dev-131603",
+      "StackId": "arn:aws:cloudformation:eu-west-3:492523105510:stack/amplify-vintedscrapper-dev-131603/9e6e2740-3db8-11ee-8080-0ef2b0dc2fea",
+      "AmplifyAppId": "d2imhw0b6ue2nv"
+    },
+    "categories": {
+      "function": {
+        "vintedscrapper": {
+          "deploymentBucketName": "amplify-vintedscrapper-dev-131603-deployment",
+          "s3Key": "amplify-builds/vintedscrapper-4e394847726a69586e74-build.zip"
+        }
+      },
+      "api": {
+        "vintedscrapperapi": {}
+      }
+    }
+  }
+}

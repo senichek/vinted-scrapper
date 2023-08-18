@@ -1,0 +1,43 @@
+{
+  "api": {
+    "vintedscrapperapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "vintedscrapper"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "vintedscrapper": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_vintedscrapper_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "vintedscrapper"
+        }
+      ]
+    },
+    "AMPLIFY_function_vintedscrapper_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "vintedscrapper"
+        }
+      ]
+    }
+  }
+}
