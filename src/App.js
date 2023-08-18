@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [data, setData] = useState("");
+
+  const handleClick = async () => {
+    const data = await fetch("https://a5tdowu1ld.execute-api.eu-west-3.amazonaws.com/dev/runscrapper")
+    const jsonData = await data.json();
+    console.log("API response>>>", jsonData);
+    setData(jsonData);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,14 +20,11 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button onClick={handleClick}
         >
           Run Script
-        </a>
+        </button>
+        <h2>{data}</h2>
       </header>
     </div>
   );

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/runscrapper": {
+      "name": "/runscrapper",
+      "lambdaFunction": "vintedscrapper",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
