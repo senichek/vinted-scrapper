@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import GraphVerticalBars from './components/GraphVerticalBars'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           Run Script
         </button>
         <h2>{data}</h2>
+        <GraphVerticalBars brandsData={data} />
       </header>
     </div>
   );
