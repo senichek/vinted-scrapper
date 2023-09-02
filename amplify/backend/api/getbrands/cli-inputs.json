@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/brands": {
+      "name": "/brands",
+      "lambdaFunction": "getBrands",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

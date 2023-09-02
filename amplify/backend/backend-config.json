@@ -1,5 +1,19 @@
 {
   "api": {
+    "getbrands": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getBrands"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
     "vintedscrapperapi": {
       "dependsOn": [
         {
@@ -16,6 +30,11 @@
     }
   },
   "function": {
+    "getBrands": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
     "vintedscrapper": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -23,6 +42,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_getBrands_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getBrands"
+        }
+      ]
+    },
+    "AMPLIFY_function_getBrands_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getBrands"
+        }
+      ]
+    },
     "AMPLIFY_function_vintedscrapper_deploymentBucketName": {
       "usedBy": [
         {
