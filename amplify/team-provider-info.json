@@ -16,10 +16,15 @@
         "vintedscrapper": {
           "deploymentBucketName": "amplify-vintedscrapper-dev-131603-deployment",
           "s3Key": "amplify-builds/vintedscrapper-72367742523543364350-build.zip"
+        },
+        "getBrands": {
+          "deploymentBucketName": "amplify-vintedscrapper-dev-131603-deployment",
+          "s3Key": "amplify-builds/getBrands-55436d716f79786e6654-build.zip"
         }
       },
       "api": {
-        "vintedscrapperapi": {}
+        "vintedscrapperapi": {},
+        "getbrands": {}
       }
     }
   }
