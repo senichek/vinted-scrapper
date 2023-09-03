@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.run_script_btn {
+  background-color: white;
+  width: 120px;
+  height: 32px;
+  border-radius: 7px;
+  font-weight: bold;
+  border: none;
+}
+
+.description {
+  font-size: 15px;
+}

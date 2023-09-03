@@ -38,19 +38,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={handleClick}
+        <h3>
+          Total "likes" per brand on VINTED
+        </h3>
+        <button className='run_script_btn' title='gdfgdf' onClick={handleClick}
         >
-          Run Script
+          Refresh Data
         </button>
+        <p className='description'>By clicking "refresh data" you'll run the script that will scrap the data from Vinted website and save it to the database.</p>
         <h2>{data}</h2>
-        <GraphVerticalBars brandsData={data} />
+        <GraphVerticalBars brandsData={brands} />
       </header>
       {brands &&
-      <div>{brands.map((brand) => (<p>{brand.title}</p>))}</div>
+      <div>{brands.map((brand) => (<p>{brand.title} - {brand.pretty_favourite_count}</p>))}</div>
       }
     </div>
   );
