@@ -27,6 +27,9 @@ function App() {
     const fetchBrands = async () => {
     const data = await getBrands();
     console.log("Brands>>>", data)
+    if (data?.length > 23) {
+      setBrands(data?.slice(0, 22))
+    }
     setBrands(data)
    }
    
