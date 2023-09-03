@@ -49,3 +49,8 @@
 .description {
   font-size: 15px;
 }
+
+.loading {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
